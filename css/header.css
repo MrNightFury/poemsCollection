@@ -54,5 +54,29 @@ header > .topnav {
 header > .topnav > li {
     border-style: solid;
     border-color: #74493b;
-    border-radius: .5em;    
+    border-radius: .3em;
+    padding: 0 .5em;
+    margin-right: .2em;
+    display: flex;
+}
+
+header > .topnav > li > a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+header > .topnav > li > a::after {
+    position: absolute;
+    background: black;
+    content: ' ';
+    height: 1.5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: rotateY(90deg);
+    transition: 1s;
+}
+header > .topnav > li > a:hover::after {
+    opacity: 1;
+    transform: rotateY(0);
 }

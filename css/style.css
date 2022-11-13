@@ -1,5 +1,6 @@
 @import url("footer.css");
 @import url("header.css");
+@import url("share.css");
 
 :root {
     --back-color: #2c1913;

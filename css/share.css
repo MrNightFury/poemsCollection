@@ -1,0 +1,43 @@
+.share-container > button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: lightgrey;
+    transition: 1s;
+}
+
+.share-container > button::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -2px;
+    background: linear-gradient(#ffffff00, #61b4ff);;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    transition: 1s;
+}
+
+.share-container > button:hover {
+    background: white;
+}
+
+.share-container > button:hover::before {
+    bottom: -2px;
+}
+
+.share-container > button > img {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    z-index: 10;
+    height: 32px;
+    transition: .5s;
+}
+
+.share-container > button:hover > img {
+    transform: rotateY(360deg);
+    filter: drop-shadow(4px 4px 2px black)
+}
