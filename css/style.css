@@ -1,0 +1,30 @@
+@import url("footer.css");
+@import url("header.css");
+
+:root {
+    --back-color: #2c1913;
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "aside main asd"
+        "footer footer footer";
+    background: var(--back-color);
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    min-height: calc(100vh - 93px);
+}
+
+footer {
+    grid-area: footer;
+}

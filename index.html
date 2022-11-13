@@ -5,22 +5,36 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/video.css">
-        <link rel="icon" type="image/png" href="images/icons/icon.png">
+        <link rel="icon" type="image/png" href="img/icons/icon.png">
         <title>Сборник стихов</title>
     </head>
     <body>
         <header>
-            <img class="icon" width="100" alt="Иконка пера" src="images/icons/feather.png">
+            <img class="icon" width="100" alt="Иконка пера" src="img/icons/feather-no-background.png">
             <div class="title">Сборник стихов</div>
-
-            <input id="menu-toggle" type="checkbox">
-            <label for="menu-toggle" class="menu-button-container">
-                <div class="menu-button"></div>
-            </label>
+            <div class="menu-button-container">
+                <input id="menu-toggle" type="checkbox">
+                <label for="menu-toggle">
+                    <div class="menu-button"></div>
+                </label>
+            </div>
+            
+            
+            <ul class="topnav">
+                <li><a href="index.html">А.С.Пушкин</a>
+                    <ul class="submenu">
+                        <li><a href="#biography">Биография</a></li>
+                        <li><a href="#lyrics">Стихи</a></li>
+                    </ul>
+                <li><a href="form.html">Форма</a>
+                <li><a href="galery.html">Галерея</a></li>
+                <li><a href="animations.html">Анимации</a></li>
+                <li><a href="admin.html">Админ</a></li>
+            </ul>
+            <span class="line"></span>
         </header>
 
-        <nav class="topmenu">
+        <!-- <nav class="topmenu">
             <ul>
                 <li><a href="index.html">А.С.Пушкин</a>
                     <ul class="submenu">
@@ -32,11 +46,12 @@
                 <li><a href="animations.html">Анимации</a></li>
                 <li><a href="admin.html">Админ</a></li>
             </ul>
-        </nav>
+        </nav> -->
         
 
         <main>
-            <h2 id="biography">Александр Сергеевич Пушкин</h2>
+            <p>Main</p>
+            <!-- <h2 id="biography">Александр Сергеевич Пушкин</h2>
             <section>
                 <h3>Краткая информация</h3>
                 <article>
@@ -116,25 +131,70 @@
                     <dd>1826 г.</dd>
                     <dd>Посвящён няне Пушкина Арине Родионовне</dd>
                 </dl>
-            </section>
+            </section> -->
         </main>
 
-        <aside class="side-menu">
+        <!-- <aside class="side-menu">
             <nav>
                 <ul>
                     <li><a href="#biography">Краткая биография</a>
                     <li><a href="#lyrics">Стихи</a>
                 </ul>
             </nav>
-        </aside>
+        </aside> -->
 
-        <div class="ads">Текст рекламы</div>
+        <!-- <div class="ads">Текст рекламы</div> -->
 
         <footer>
-            <address>
-                <a href="tel:78005553535">Телефон</a>
-                <a href="mailto:doluppautikoi-4172@yopmail.com">Почта</a>   
-            </address>
+            <div class="footer-grid">
+                <div class="about-us">
+                    <h2>О нас</h2>
+                    <div class="footer-line"></div>
+                    <p>Некоторый текст, описывающий сайт и компанию.</p>
+                    <div class="share-container">
+                        <button class="share-1"><img src="images/icons/telegram.png" alt="tg"></button>
+                        <button class="share-2"></button>
+                        <button class="share-3"></button>
+                        <button class="share-4"></button>
+                        <button class="share-5"></button>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <h2>Quick links</h2>
+                    <div class="footer-line"></div>
+                    <ul>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                    </ul>
+                </div>
+                <div class="shop">
+                    <h2>Shop</h2>
+                    <div class="footer-line"></div>
+                    <ul>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                        <li><a href>Ссылка</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h2>Contact us</h2>
+                    <div class="footer-line"></div>
+                    <address>
+                        <ul>
+                            <li><a href="tel:78005553535">Телефон</a></li>
+                            <li><a href="mailto:doluppautikoi-4172@yopmail.com">Почта</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">Копирайт</div>
         </footer>
     </body>
 </html>

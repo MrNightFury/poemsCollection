@@ -1,0 +1,58 @@
+header {
+    display: grid;
+    grid-template: auto 1fr 2px / auto 1fr;
+    grid-template-areas: 
+        "icon title"
+        "icon nav"
+        "line line";
+    background: wheat;
+    column-gap: 1em;
+    box-shadow: 0 -1.5em 2em 1em wheat;
+}
+
+header > .line {
+    background: #b4a383;
+    content: ' ';
+    grid-area: line;
+    
+}
+
+header > .icon {
+    grid-area: icon;
+    height: 75px;
+    width: 75px;
+    margin: .5em;
+}
+
+header > .title {
+    grid-area: title;
+    font-size: 200%;
+    margin-top: .25em;
+}
+
+header > .menu-button-container {
+    display: none;
+}
+
+.submenu {
+    display: none;
+}
+
+header > .topnav {
+    height: auto;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    align-content: center;
+    padding: 0;
+/*     align-items: flex-start; */
+}
+
+header > .topnav > li {
+    border-style: solid;
+    border-color: #74493b;
+    border-radius: .5em;    
+}
