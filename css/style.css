@@ -1,14 +1,17 @@
-@import url("footer.css");
 @import url("header.css");
+@import url("footer.css");
 @import url("share.css");
 
 :root {
+    --back-color2: #4d2a17;
     --back-color: #2c1913;
+    --main-color: wheat;
+    --paper-color: #fff6e3;
 }
 
 body {
     display: grid;
-    grid-template: auto 1fr auto / 1fr 1fr 1fr;
+    grid-template: auto 1fr auto / 1fr 6fr 1fr;
     grid-template-areas: 
         "header header header"
         "aside main asd"
@@ -21,11 +24,109 @@ header {
     grid-area: header;
 }
 
-main {
+.main {
+    position: relative;
     grid-area: main;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
     min-height: calc(100vh - 93px);
+    background: var(--paper-color);
+    padding: 1em;
+    flex-grow: 1;
+    z-index: 5;
+}
+
+#page-1, #page-2,
+#page-3, #page-4 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    transition: 1s;
+}
+#page-1 {
+    background: #e7d6b6;
+}
+#page-2 {
+    background: #d3be97;
+}
+#page-3 {
+    background: #baa47d;
+}
+#page-4 {
+    background: #897248;
 }
 
 footer {
     grid-area: footer;
+}
+
+
+.poem {
+    background: wheat;
+    padding: .5em;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.poem > input {
+    display: none;
+}
+
+.poem > label >  h3 {
+    position: relative;
+/*     display: inline; */
+/*     padding: .5em; */
+    margin: 0;
+}
+
+.poem > div {
+    position: relative;
+    background: var(--paper-color);
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+/*     top: -100px; */
+}
+
+.poem > div > p {
+    margin: .5em;
+}
+
+.poem > input:checked ~ div {
+    height: auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+            "header header"
+            "aside main"
+            "footer footer";
+    }
+    .main {
+        margin-right: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        margin: 0;
+    }
+    .main > span {
+        display: none;
+    }
 }
