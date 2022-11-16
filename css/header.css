@@ -93,16 +93,18 @@ header > .topnav > li > a:hover::after {
 }
 
 #burger {
-    grid-area: button;
+/*     display: none; */
+/*     grid-area: button; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 64px;
-    margin: .5em;
+    margin: 0;
     cursor: pointer;
 }
 
 #burger > span {
+    display: none;
     background: var(--back-color);
     width: 4em;
     height: .75em;
@@ -127,6 +129,14 @@ header > .topnav > li > a:hover::after {
         font-size: 300%;
         margin-top: .25em;
     }
+
+    #burger {
+        grid-area: button;
+        margin: .5em;
+    }
+    #burger > span {
+        display: block;
+    }
     header > .topnav {
         position: absolute;
         flex-direction: column;
@@ -147,7 +157,6 @@ header > .topnav > li > a:hover::after {
 
     header > .topnav > .topnav-open {
         position: relative;
-/*         background: black; */
         display: inline;
         left: -100%;
     }
