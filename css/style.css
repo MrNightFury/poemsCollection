@@ -67,44 +67,6 @@ footer {
     grid-area: footer;
 }
 
-
-.poem {
-    background: wheat;
-    padding: .5em;
-    height: auto;
-    margin-bottom: 1em;
-}
-
-.poem > input {
-    display: none;
-}
-
-.poem > label >  h3 {
-    position: relative;
-/*     display: inline; */
-/*     padding: .5em; */
-    margin: 0;
-}
-
-.poem > div {
-    position: relative;
-    background: var(--paper-color);
-    padding: 0;
-    height: 0;
-    overflow: hidden;
-    transition: height 1s;
-/*     top: -100px; */
-}
-
-.poem > div > p {
-    margin: .5em;
-}
-
-.poem > input:checked ~ div {
-    height: auto;
-}
-
-
 @media screen and (max-width: 1000px) {
     body {
         grid-template-columns: 1fr 4fr;

@@ -21,3 +21,13 @@ for (let i = 0; i < tr.length; i++) {
         }
     }
 }
+
+let menuTrigger = document.getElementById("menu-trigger");
+menuTrigger.onclick = function (){
+        let lis = document.querySelectorAll('.topnav > li');
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].style["transition-delay"] = i / 10 + "s";
+            lis[i].classList.toggle ("topnav-open");
+        }
+
+}

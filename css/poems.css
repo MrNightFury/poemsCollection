@@ -1,0 +1,33 @@
+.poem {
+    background: wheat;
+    padding: .5em;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.poem > input {
+    display: none;
+}
+
+.poem > label >  h3 {
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+}
+
+.poem > div {
+    position: relative;
+    background: var(--paper-color);
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.poem > div > p {
+    margin: .5em;
+}
+
+.poem > input:checked ~ div {
+    height: auto;
+}

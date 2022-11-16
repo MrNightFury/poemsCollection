@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/poems.css">
         <link rel="icon" type="image/png" href="img/icons/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -12,13 +13,13 @@
         <header>
             <img class="icon" width="100" alt="Иконка пера" src="img/icons/feather-no-background.png">
             <div class="title">Сборник стихов</div>
-            <div class="menu-button-container">
+
+            <!-- <div class="menu-button-container">
                 <input id="menu-toggle" type="checkbox">
                 <label for="menu-toggle">
                     <div class="menu-button"></div>
                 </label>
-            </div>
-            
+            </div> -->
             
             <ul class="topnav">
                 <li><a href="index.html">А.С.Пушкин</a>
@@ -26,11 +27,19 @@
                         <li><a href="#biography">Биография</a></li>
                         <li><a href="#lyrics">Стихи</a></li>
                     </ul>
-                <li><a href="form.html">Форма</a>
+                <li><a href="form.html" class="topnav-open">Форма</a>
                 <li><a href="galery.html">Галерея</a></li>
                 <li><a href="animations.html">Анимации</a></li>
                 <li><a href="admin.html">Админ</a></li>
             </ul>
+
+            <input type="checkbox" id="menu-trigger">
+            <label for="menu-trigger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <span class="line"></span>
         </header>
 
