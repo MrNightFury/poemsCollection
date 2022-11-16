@@ -24,6 +24,11 @@
     transition: height 1s;
 }
 
+.poem > div > div {
+    height: auto;
+}
+
+
 .poem > div > p {
     margin: .5em;
 }
