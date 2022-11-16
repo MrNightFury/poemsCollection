@@ -9,10 +9,12 @@
     display: none;
 }
 
-.poem > label >  h3 {
+.poem > label >  h2 {
     position: relative;
     margin: 0;
     cursor: pointer;
+    top: .3em;
+
 }
 
 .poem > div {
@@ -22,6 +24,7 @@
     height: 0;
     overflow: hidden;
     transition: height 1s;
+    margin-top: .5em;
 }
 
 .poem > div > div {
@@ -34,5 +37,49 @@
 }
 
 .poem > input:checked ~ div {
-    height: auto;
+    /* height: auto; */
 }
+
+.poem > label {
+    display: flex;
+}
+
+.poem-arrow {
+    overflow: hidden;
+    position: relative;
+    content: '';
+    width: 2em;
+    height: 2em;
+    margin: 0 .5em;
+    transition: 1s;
+}
+
+.poem-arrow::before,
+.poem-arrow::after {
+    content: ' ';
+    position: absolute;
+    width: 2.4em;
+    height: .125em;
+    background: black;
+    top: .8em;
+/*     transition: 1s; */
+}
+
+.poem-arrow::before {
+    transform: rotateZ(45deg);
+    left: -1em;
+}
+.poem-arrow::after {
+    transform: rotateZ(-45deg);
+    right: -1em;
+}
+.poem > input:checked ~ label > span {
+    transform: rotateX(180deg) translateY(-.5em);
+}
+
+/* .poem > input:checked ~ label > span::before {
+    transform: rotateZ(-45deg) translate(-.4em, .4em);
+}
+.poem > input:checked ~ label > span::after {
+    transform: rotateZ(45deg) translate(.4em, .4em);;
+} */
