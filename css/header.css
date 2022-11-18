@@ -31,6 +31,7 @@ header > .icon {
 }
 
 header > .title {
+    color: var(--back-color);
     grid-area: title;
     font-size: 200%;
     margin-top: .25em;
@@ -54,8 +55,10 @@ header > .topnav {
     padding: 0;
     height: auto;
     grid-area: nav;
+    pointer-events: none;
 /*     transition: 1s; */
 /*     display: none; */
+    
 }
 
 header > .topnav > li {
@@ -65,7 +68,7 @@ header > .topnav > li {
     border-radius: .3em;
     padding: 0 .5em;
     margin-right: .2em;
-    
+    pointer-events: auto;
 /*     display: none; */
 }
 

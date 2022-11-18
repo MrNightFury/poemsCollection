@@ -1,0 +1,82 @@
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    float: right;
+    width: 32vw;
+    height: 24vw;
+}
+
+.slider > .slider-img-wrap {
+    position: absolute;
+    display: flex;
+    left: 0%;
+    transition: 1s;
+/*     height: auto; */
+/*     left: -100%; */
+}
+
+.slider > div > figure {
+/*     height: auto; */
+}
+
+.slider > div > figure > img {
+    object-fit: cover;
+    height: 24vw;
+}
+
+.slider-arrow-l,
+.slider-arrow-r {
+    position: absolute;
+    top: 10.5vw;
+    content: 'asd';
+    background: black;
+    width: 3vw;
+    height: 3vw;
+}
+.slider-arrow-l {
+    left: 1vw;
+}
+.slider-arrow-r {
+    right: 1vw;
+}
+
+.slider > div > figure > p {
+    display: inline;
+    position: relative;
+    bottom: 1.4em;
+    left: -.2em;
+    padding: .1em .5em;
+    background: #d3d3d363;
+    backdrop-filter: blur(4px);
+    border-style: solid;
+    border-color: #74493b;
+    border-radius: .3em;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        float: none;
+        width: 88vw;
+        height: 66vw;
+        margin-bottom: 1em;
+    }
+    .slider > div > figure > img {
+        height: 66vw;
+    }
+    .slider-arrow-l,
+    .slider-arrow-r {
+        position: absolute;
+        top: 30.5vw;
+        content: 'asd';
+        background: black;
+        width: 8vw;
+        height: 8vw;
+    }
+}

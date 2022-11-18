@@ -1,7 +1,11 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("share.css");
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
 :root {
     --back-color2: #4d2a17;
     --back-color: #2c1913;
@@ -18,7 +22,7 @@ body {
         "footer footer footer";
     background: var(--back-color);
     margin: 0;
-    width: 100em;
+/*     width: 100em; */
 }
 
 header {
@@ -85,6 +89,9 @@ footer {
     body {
         display: flex;
         flex-direction: column;
+    }
+    main {
+        min-height: calc(100vh - 66px);
     }
     .main {
         margin: 0;

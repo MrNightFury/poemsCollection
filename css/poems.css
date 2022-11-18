@@ -1,8 +1,8 @@
 .poem {
     background: wheat;
-    padding: .5em;
+    padding: .25em;
     height: auto;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .poem > input {
@@ -42,26 +42,27 @@
 
 .poem > label {
     display: flex;
+    color: var(--back-color2);
 }
 
 .poem-arrow {
     overflow: hidden;
     position: relative;
     content: '';
-    width: 2em;
+    width: 1.5em;
     height: 2em;
     margin: 0 .5em;
-    transition: 1s;
+    transition: .5s;
 }
 
 .poem-arrow::before,
 .poem-arrow::after {
     content: ' ';
     position: absolute;
-    width: 2.4em;
+    width: 2.1em;
     height: .125em;
-    background: black;
-    top: .8em;
+    background: var(--back-color);;
+    top: .9em;
 /*     transition: 1s; */
 }
 
@@ -74,7 +75,7 @@
     right: -1em;
 }
 .poem > input:checked ~ label > span {
-    transform: rotateX(180deg) translateY(-.5em);
+    transform: rotateX(180deg) translateY(-.6em);
 }
 
 /* .poem > input:checked ~ label > span::before {

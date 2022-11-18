@@ -4,8 +4,11 @@
     height: 40px;
     border-radius: 20px;
     overflow: hidden;
-    background: lightgrey;
+    background-color: lightgrey;
     transition: 1s;
+/*     background: linear-gradient(#ffffff00, #61b4ff);
+    background-repeat: no-repeat;
+    background-position: 100% 100%; */
 }
 
 .share-container > button::before {
@@ -13,7 +16,8 @@
     position: absolute;
     bottom: -40px;
     left: -2px;
-    background: linear-gradient(#ffffff00, #61b4ff);;
+    background: linear-gradient(#ffffff00, #61b4ff); 
+/*     background-size: 110%; */
     width: 40px;
     height: 40px;
     z-index: 10;
