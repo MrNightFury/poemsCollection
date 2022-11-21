@@ -1,0 +1,65 @@
+.card-holder {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    width: 21vw;
+    height: 28vw;
+    cursor: pointer;
+}
+
+.card > img {
+    width: 21vw;
+}
+
+.card > div {
+    position: absolute;
+    width: 100%;
+    height: 28vw;
+    bottom: 0;
+    transition: .75s;
+}
+
+.card > div > h2 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translatey(-50%);
+    transition: .75s;
+    word-wrap: break-word;
+}
+
+.card:hover > div {
+    backdrop-filter: blur(8px);
+}
+
+.card:hover > div > h2 {
+    opacity: 1;
+/*     backdrop-filter: blur(10px); */
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 27vw;
+        height: 36vw;
+    }
+
+    .card > img {
+        width: 27vw;
+    }
+
+    .card > div {
+        height: 36vw;
+    }
+}
+
+.quiz-banner {
+    width: 100%;
+}

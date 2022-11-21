@@ -72,6 +72,20 @@ footer {
     grid-area: footer;
 }
 
+section {
+    padding: 1em;
+    background: #fff0d1;
+    margin-bottom: 1em;
+    font-size: 125%;
+}
+
+hr {
+    background: var(--back-color);
+    border-style: none;
+    height: 2px;
+    margin-bottom: .5em;
+}
+
 @media screen and (max-width: 1000px) {
     body {
         grid-template-columns: 1fr 4fr;
@@ -99,4 +113,9 @@ footer {
     .main > span {
         display: none;
     }
+    section {
+        padding: .5em;
+        margin-bottom: .5em;
+    }
 }
+

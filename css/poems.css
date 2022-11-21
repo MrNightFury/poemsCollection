@@ -3,13 +3,14 @@
     padding: .25em;
     height: auto;
     margin-bottom: .5em;
+    font-size: 100%;
 }
 
 .poem > input {
     display: none;
 }
 
-.poem > label >  h2 {
+.poem > label > h2 {
     position: relative;
     margin: 0;
     cursor: pointer;
@@ -28,16 +29,17 @@
 }
 
 .poem > div > div {
+    padding: .5em;
+    font-size: 125%;
+}
+
+.poem > div > div {
     height: auto;
 }
 
 
 .poem > div > p {
     margin: .5em;
-}
-
-.poem > input:checked ~ div {
-    /* height: auto; */
 }
 
 .poem > label {

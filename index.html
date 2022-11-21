@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cards.css">
         <link rel="icon" type="image/png" href="img/icons/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -23,9 +24,6 @@
                 <li><a href="esenin.html">Есенин</a>
                 <li><a href="mayakovskiy.html">Маяковский</a>
                 <li><a href="quiz.html">Квиз</a>
-                <!-- <li><a href="galery.html">Галерея</a></li>
-                <li><a href="animations.html">Анимации</a></li>
-                <li><a href="admin.html">Админ</a></li> -->
             </ul>
 
             <input type="checkbox" id="menu-trigger">
@@ -36,13 +34,49 @@
                     <span></span>
                 </label>
             </div>
-            
-
             <span class="line"></span>
         </header>
         
         <div class="main">
             <main>
+                <section>
+                    <h2>О нас</h2>
+                    <p>На нашем сайте Вы с легкостью можете найти и почитать произведение как отечественных,
+                        так и зарубежных поэтов-классиков. С помощью магии слов великие творцы старались передать все чувства,
+                        которые может испытывать каждый человек на Земле: любовь, счастье, радость, страх, боль.
+                        Все они крутятся в неведомом водовороте, в который может окунуться читатель.
+                        Каким бы ни было ваше настроение и душевное состояние, на сайте Сборник-стихов.ру Вы всегда найдете то,
+                        что придется Вам по вкусу именно в данный момент: будь то чарующая любовь и страсть,
+                        что накаляется между лирическими героями, или не взаимные чувства, которые могли возникать у многих из нас.</p>
+                </section>
+                <section>
+                    <h2>Популярные авторы</h2>
+                    <hr>
+                    <div class="card-holder">
+                        <div class="card" onclick="location.href='pushkin.html';">
+                            <img src="img/pushkin.jpg">
+                            <div>
+                                <h2><a>А.С. Пушкин</a></h2>
+                            </div>
+                        </div>
+                        <div class="card" onclick="location.href='yesenin.html';">
+                            <img src="img/esenin.jpg">
+                            <div>
+                                <h2>С.А. Есенин</h2>
+                            </div>
+                        </div>
+                        <div class="card" onclick="location.href='mayakovskiy.html';">
+                            <img src="img/mayakovskiy.jpg">
+                            <div>
+                                <h2>В.В. Маяковский</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <p>Также на нашем сайте вы можете пройти квиз, посвящённый творчеству известных русских поэтов.</p>
+                    <img class="quiz-banner" src="img/quiz.png">
+                </section>
                 
             </main>
             <span id="page-1"></span>
@@ -50,106 +84,16 @@
             <span id="page-3"></span>
             <span id="page-4"></span>
         </div>
-        
-            
-            <!-- <h2 id="biography">Александр Сергеевич Пушкин</h2>
-            <section>
-                <h3>Краткая информация</h3>
-                <article>
-                    <p>Русский поэт, драматург и прозаик, заложивший основы русского реалистического направления, литературный критик и теоретик литературы, историк, публицист, журналист.
-                    <br><strong>Родился</strong> 6 июня 1799 г., <a href="https://ru.wikipedia.org/wiki/Москва">Москва</a>, Российская империя
-                    <img width="20" style="display: inline;" src="images/emblem.png">
-                    <br><b>Умер</b> 10 февраля 1837 г. (37 лет), Санкт-Петербург, Российская империя 
-                    
-                </p>
-                </article>
-            </section>
-            <section>
-                <h3>Основные творческие периоды</h3>
-                <ol type="I">
-                    <li>Лицейский</li>
-                    <li>Петербургский</li>
-                    <li>Период  южной ссылки
-                        <ul>
-                            <li>Крым</li>
-                            <li>Кишенёв и одесса</li>
-                        </ul>
-                    </li>
-                    <li>Ссылка в Михайловсом</li>
-                    <li>Московский период</li>
-                    <li>Болдинская осень</li>
-                    <li>Позднее творчество</li>
-                </ol>
-            </section>
-            
-            <section>
-                <p>Возвращение в родительскую семью окончилось серьезным скандалом. Отец следил за Александром, что сильно раздражало свободолюбивого Пушкина. В итоге вся родительская семья переехала жить в Петербург. Пушкин остался в Михайловском еще на 2 долгих года на попечении няни, Ирины Родионовны, Настроение у поэта было подавленным, но он использовал это уединение для плодотворной работы и чтения книг.</p>
-                <figure style="float: right;">
-                    <img width="180" alt="Арина Родионовна" src="images/Arina.png">
-                    <figcaption>Арина Родионовна</figcaption>
-                </figure>
-                <p>В восстании декабристов, в 1825 году, к которому имели отношение многие его друзья, Пушкин участия не принимал. Ему были сообщены ложные даты восстания, что, возможно, уберегло великого поэта от серьезных последствий. Зная его стихотворения, например, «К Чаадаеву», смелые эпиграммы и вспыльчивый характер, можно предположить, что он мог принять участие в восстании.</p>
-                <p>После коронования Николая I, поэту было велено прибыть в Москву для аудиенции с императором. Ссылка окончена, а поэту предложено покровительство. Он освобожден от цензуры.</p>
-                <p>Поэт подавал прошения о поездке за границу, но они оставались без ответа. Тогда он уехал самовольно за что Пушкину был вынесен строгий выговор. Итогом поездки стали стихи «Обвал», «Кавказ», «На холмах Грузии...».</p>
-                <p>В 1828 году Пушкин знакомится с красавицей Гончаровой, которую нежно называет Натали. Не смотря на препятствия, возникшие на пути к их браку, через несколько лет влюбленные поженились. Страстная любовь Пушкина была дополнена спокойной и уравновешенной любовью его избранницы. У супругов родилось четверо детей.</p>
-            </section>  
-
-			<div class="video-frame">
-				<video controls poster="images/dance.jpg" autoplay="auto" loop muted preload="auto">
-                    <source src="dance.mp4" type="video/mp4">
-                </video>
-                <div>
-                    <p class="video-title">Заголовок</p>
-                    <p>Некоторое описание того непотребства, которое происходит на видео</p>
-                </div>
-			</div>
-
-            <section id="Lyrics">
-                <h2 id="Yesenin">Стихи</h2>
-                <dl>
-                    <dt><a href>Евгений Огенин</a></dt>
-                    <dd>1823-1830 гг.</dd>
-                    <dd>Написан уникальной онегинской строфой</dd>
-
-                    <dt><a href>Зимнее утро</a></dt>
-                    <dd>1829 г.</dd>
-
-                    <dt><a href>Зимний вечер</a></dt>
-                    <dd>1825 г.</dd>
-
-                    <dt><a href>Зима!... Крестьянин торжествуя...</a></dt>
-                    <dd>1826 г.</dd>
-
-                    <dt><a href>Няне</a></dt>
-                    <dd>1826 г.</dd>
-                    <dd>Посвящён няне Пушкина Арине Родионовне</dd>
-                </dl>
-            </section> -->
-        
-
-        <!-- <aside class="side-menu">
-            <nav>
-                <ul>
-                    <li><a href="#biography">Краткая биография</a>
-                    <li><a href="#lyrics">Стихи</a>
-                </ul>
-            </nav>
-        </aside> -->
-
-        <!-- <div class="ads">Текст рекламы</div> -->
-
         <footer>
             <div class="footer-grid">
                 <div class="about-us">
                     <h2>О нас</h2>
                     <div class="footer-line"></div>
-                    <p>Некоторый текст, описывающий сайт и компанию.</p>
+                    <p>Сборник-стихов.ру – российский литературный портал, предоставляющий авторам возможность свободной публикации своих произведений.</p>
                     <div class="share-container">
-                        <button class="share-1"><img src="img/icons/telegram.png" alt="tg"></button>
-                        <button class="share-2"></button>
-                        <button class="share-3"></button>
-                        <button class="share-4"></button>
-                        <button class="share-5"></button>
+                        <a href="https://t.me/"><img src="img/icons/telegram.png" alt="tg"></a>
+                        <a href="https://www.youtube.com/"><img src="img/icons/youtube.png" alt="youtube"></a>
+                        <a href="https://vk.com/"><img src="img/icons/vk.png" alt="vk"></a>
                     </div>
                 </div>
                 <div class="quick-links">
