@@ -17,10 +17,6 @@
 /*     left: -100%; */
 }
 
-.slider > div > figure {
-/*     height: auto; */
-}
-
 .slider > div > figure > img {
     object-fit: cover;
     height: 24vw;
@@ -34,6 +30,8 @@
     border-radius: 100%;
     width: 3vw;
     height: 3vw;
+    opacity: 0;
+    transition: .5s;
 }
 .slider-arrow-l > img,
 .slider-arrow-r > img {
@@ -61,6 +59,11 @@
     width: 100%;
 }
 
+.slider:hover > .slider-arrow-l,
+.slider:hover > .slider-arrow-r {
+    opacity: 1;
+}
+
 @media screen and (max-width: 1000px) {
     
 }
@@ -68,12 +71,12 @@
 @media screen and (max-width: 768px) {
     .slider {
         float: none;
-        width: 88vw;
-        height: 66vw;
+        width: 80vw;
+        height: 60vw;
         margin-bottom: 1em;
     }
     .slider > div > figure > img {
-        height: 66vw;
+        height: 60vw;
     }
     .slider-arrow-l,
     .slider-arrow-r {
