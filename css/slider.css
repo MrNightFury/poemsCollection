@@ -30,10 +30,15 @@
 .slider-arrow-r {
     position: absolute;
     top: 10.5vw;
-    content: 'asd';
-    background: black;
+    background: white;
+    border-radius: 100%;
     width: 3vw;
     height: 3vw;
+}
+.slider-arrow-l > img,
+.slider-arrow-r > img {
+    width: inherit;
+    height: inherit;
 }
 .slider-arrow-l {
     left: 1vw;
@@ -74,9 +79,52 @@
     .slider-arrow-r {
         position: absolute;
         top: 30.5vw;
-        content: 'asd';
-        background: black;
+/*         content: 'asd'; */
+/*         background: white; */
         width: 8vw;
         height: 8vw;
     }
+/*     .slider-arrow-l > span,
+    .slider-arrow-r > span {
+        position: absolute;
+        background: black;
+        top: 40%;
+        width: 100%;
+        height: 20%;
+        border-radius: .5em;
+    } */
+
+/*     .slider-arrow-l > span::before,
+    .slider-arrow-r > span::before,
+    .slider-arrow-l > span::after,
+    .slider-arrow-r > span::after
+    
+    .slider-arrow-l > span::before,
+    .slider-arrow-r > span::before {
+        content: ' ';
+        position: absolute;
+        background: black;
+        width: 75%;
+        height: 100%;
+        border-radius: .5em;
+        top: -50%;
+        transform: rotateZ(45deg);
+    } */
+
+/*     .slider-arrow-l > span::after,
+    .slider-arrow-r > span::after {
+        content: ' ';
+        position: absolute;
+        background: black;
+        width: 75%;
+        height: 100%;
+        border-radius: .5em;
+        top: 1em;
+        
+    }
+
+    .slider-arrow-l > span::after,
+    .slider-arrow-l > span::before {
+        
+    } */
 }
