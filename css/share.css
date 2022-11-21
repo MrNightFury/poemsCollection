@@ -1,4 +1,5 @@
-.share-container > button {
+.share-container > a {
+    display: inline-block;
     position: relative;
     width: 40px;
     height: 40px;
@@ -11,12 +12,11 @@
     background-position: 100% 100%; */
 }
 
-.share-container > button::before {
+.share-container > a::before {
     content: '';
     position: absolute;
     bottom: -40px;
     left: -2px;
-    background: linear-gradient(#ffffff00, #61b4ff); 
 /*     background-size: 110%; */
     width: 40px;
     height: 40px;
@@ -24,24 +24,36 @@
     transition: 1s;
 }
 
-.share-container > button:hover {
+.share-container > a:nth-child(1)::before {
+    background: linear-gradient(#ffffff00, #61b4ff); 
+}
+.share-container > a:nth-child(2)::before {
+    background: linear-gradient(#ffffff00, red); 
+}
+.share-container > a:nth-child(3)::before {
+    background: linear-gradient(#ffffff00, #004f96); 
+}
+
+.share-container > a:hover {
     background: white;
 }
 
-.share-container > button:hover::before {
-    bottom: -2px;
+.share-container > a:hover::before {
+    bottom: -8px;
 }
 
-.share-container > button > img {
+    
+.share-container > a > img {
     position: absolute;
     top: 2px;
     left: 1px;
     z-index: 10;
     height: 32px;
     transition: .5s;
+    margin: 2px;
 }
 
-.share-container > button:hover > img {
+.share-container > a:hover > img {
     transform: rotateY(360deg);
-    filter: drop-shadow(4px 4px 2px black)
+    filter: drop-shadow(4px 4px 2px gray)
 }
