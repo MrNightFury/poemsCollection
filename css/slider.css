@@ -6,6 +6,11 @@
     float: right;
     width: 32vw;
     height: 24vw;
+    margin-left: 1em;
+}
+
+section:has(.slider) {
+    min-height: calc(24vw + 2em);
 }
 
 .slider > .slider-img-wrap {
@@ -20,6 +25,7 @@
 .slider > div > figure > img {
     object-fit: cover;
     height: 24vw;
+/*     max-height: 300px; */
 }
 
 .slider-arrow-l,

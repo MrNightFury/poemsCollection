@@ -163,6 +163,7 @@ header > .topnav > li > a:hover::after {
         overflow: hidden;
         flex-direction: column;
         top: 100%;
+        width: 100%;
         right: 0;
         z-index: 10;
         font-size: 300%;
@@ -174,7 +175,7 @@ header > .topnav > li > a:hover::after {
         transition: left 1s;
         background: #d3d3d363;
         backdrop-filter: blur(4px);
-        
+        width: 100%;
     }
 
     header > .topnav > .topnav-open {
