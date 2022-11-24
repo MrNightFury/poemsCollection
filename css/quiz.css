@@ -1,0 +1,29 @@
+.quiz {
+    font-size: 200%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    height: 100%;
+}
+#question {
+    margin: auto;
+}
+.answer-container {
+    display: grid;
+    width: 100%;
+    gap: .5em;
+    grid-template: auto auto 1fr / 1fr 1fr;
+}
+.answer {
+    padding: .5em;
+    margin: auto;
+    width: 100%;
+    background: wheat;
+    text-align: center;
+    border-style: solid;
+    border-color: #74493b;
+    border-radius:.5em;
+    transition: 1s;
+}
+.answer {
+/*     box-shadow: 0 0 1em .25em inset red; */
+}

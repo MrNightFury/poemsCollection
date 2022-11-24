@@ -6,6 +6,7 @@
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/quiz.css">
         <link rel="icon" type="image/png" href="img/icons/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -39,7 +40,15 @@
         
         <div class="main">
             <main>
-                
+                <div class="quiz">
+                    <p id="question">Вопрос</p>
+                    <div class="answer-container">
+                        <p class="answer" id="answer-0">Ответ 1</p>
+                        <p class="answer" id="answer-1">Ответ 2</p>
+                        <p class="answer" id="answer-2">Ответ 3</p>
+                        <p class="answer" id="answer-3">Ответ 4</p>
+                    </div>
+                </div>
             </main>
             <span id="page-1"></span>
             <span id="page-2"></span>
@@ -96,5 +105,7 @@
             <div class="copyright">Копирайт</div>
         </footer>
         <script src="js/misc.js"></script>
+        <script type="text/javascript" src="js/quiz.json"></script>
+        <script src="js/quiz.js"></script>
     </body>
 </html>
