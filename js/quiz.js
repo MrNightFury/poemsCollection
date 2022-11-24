@@ -45,15 +45,19 @@ function getRandomQuestion (type) {
     return question;
 }
 function setQuestion (question) {
+    curQuestion = question;
     let q = document.getElementById("question");
     q.innerText = question.que;
     for (let i = 0; i < 4; i++) {
         let a = document.getElementById("answer-" + i);
         a.innerText = question.anss[i];
+        a.onclick = null;
         a.onclick = function () {
             if (curQuestion.correctAns == i) {
+                // alert(curQuestion.correctAns + " " + i);
                 a.style["box-shadow"] = "0 0 1em .25em inset green";
             } else {
+                // alert(curQuestion.correctAns + " " + i);
                 a.style["box-shadow"] = "0 0 1em .25em inset red";
             }
             setTimeout (() => {a.style["box-shadow"] = "none"}, 1500);
