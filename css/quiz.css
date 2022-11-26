@@ -22,7 +22,8 @@
     border-style: solid;
     border-color: #74493b;
     border-radius:.5em;
-    transition: 1s;
+    transition: 2s;
+    cursor: pointer;
 }
 .answer {
 /*     box-shadow: 0 0 1em .25em inset red; */
