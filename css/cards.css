@@ -60,6 +60,17 @@
     }
 }
 
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.info > div {
+    position: relative;
+    cursor: pointer;
+}
+
 .quiz-banner {
     width: 100%;
 }

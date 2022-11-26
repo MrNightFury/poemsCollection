@@ -87,13 +87,8 @@
     transform: rotateZ(45deg) translate(.4em, .4em);;
 } */
 
-.info {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
+
 
 .info > img {
     height: 20vw;
-
 }
