@@ -48,12 +48,11 @@ section:has(> .card-holder) {
 
 .card:hover > div > h2 {
     opacity: 1;
-/*     backdrop-filter: blur(10px); */
 }
 
 @media screen and (max-width: 1000px) {
     section:has(> .card-holder) {
-        width: calc(80vw - 2em);
+        width: calc(90vw - 1.5em);
     }
 }
 
