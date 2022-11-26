@@ -57,8 +57,8 @@ section:has(.slider) {
     bottom: 1.4em;
     left: -.2em;
     padding: .1em .5em;
-    background: #d3d3d363;
-    backdrop-filter: blur(4px);
+    background: #d3d3d3c4;
+    backdrop-filter: blur(8px);
     border-style: solid;
     border-color: #74493b;
     border-radius: .3em;
