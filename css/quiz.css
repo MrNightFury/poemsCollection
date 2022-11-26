@@ -25,6 +25,12 @@
     transition: 2s;
     cursor: pointer;
 }
-.answer {
-/*     box-shadow: 0 0 1em .25em inset red; */
+
+@media screen and (max-width: 768px) {
+    .answer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
 }
