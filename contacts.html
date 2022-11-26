@@ -6,6 +6,7 @@
         <meta name = "viewport" content = "wight=device-wight, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/contacts.css">
         <link rel="icon" type="image/png" href="img/icons/icon.png">
         <title>Сборник стихов</title>
     </head>
@@ -40,51 +41,33 @@
         
         <div class="main">
             <main>
-                <section>
-                    <h2>О нас</h2>
-                    <p>На нашем сайте Вы с легкостью можете найти и почитать произведение как отечественных,
-                        так и зарубежных поэтов-классиков. С помощью магии слов великие творцы старались передать все чувства,
-                        которые может испытывать каждый человек на Земле: любовь, счастье, радость, страх, боль.
-                        Все они крутятся в неведомом водовороте, в который может окунуться читатель.
-                        Каким бы ни было ваше настроение и душевное состояние, на сайте Сборник-стихов.ру Вы всегда найдете то,
-                        что придется Вам по вкусу именно в данный момент: будь то чарующая любовь и страсть,
-                        что накаляется между лирическими героями, или не взаимные чувства, которые могли возникать у многих из нас.</p>
-                </section>
-                <section>
-                    <h2>Популярные авторы</h2>
-                    <hr>
-                    <div class="card-holder">
-                        <div class="card" onclick="location.href='pushkin.html';">
-                            <img src="img/pushkin.jpg">
-                            <div>
-                                <h2><a>А.С. Пушкин</a></h2>
-                            </div>
-                        </div>
-                        <div class="card" onclick="location.href='yesenin.html';">
-                            <img src="img/esenin.jpg">
-                            <div>
-                                <h2>С.А. Есенин</h2>
-                            </div>
-                        </div>
-                        <div class="card" onclick="location.href='mayakovskiy.html';">
-                            <img src="img/mayakovskiy.jpg">
-                            <div>
-                                <h2>В.В. Маяковский</h2>
-                            </div>
-                        </div>
-                        <div class="card" onclick="location.href='nekrasov.html';">
-                            <img src="img/nekrasov.jpg">
-                            <div>
-                                <h2>Н.А. Некрасов</h2>
-                            </div>
-                        </div>
+                <section class="address">
+                    <div>
+                        <h3>Как к нам добраться</h3>
+                        <ul>
+                            <li>От м. «Юго-Западная» - автобус 227, 667 до остановки «Академия народного хозяйства» (выход из первого вагона налево)</li>
+                            <li>От м. «Юго-Западная» пешком около 10 мин (выход из последнего вагона налево).</li>
+                        </ul>
+                    </div>
+                    <div class="map" style="position:relative;overflow:hidden;">
+                        <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                        <a href="https://yandex.ru/maps/213/moscow/?from=mapframe&ll=37.481120%2C55.666910&mode=usermaps&source=mapframe&um=constructor%3AwwUnE7PMEagmxkU8y_JW_-_CfdxIcmCK&utm_medium=mapframe&utm_source=maps&z=15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUf6VdhXA" width="336" height="240" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
                     </div>
                 </section>
-                <section class="info">
-                    <p>Также на нашем сайте вы можете пройти квиз, посвящённый творчеству известных русских поэтов.</p>
-                    <div onclick="location.href='quiz.html';">
-                        <img class="quiz-banner" src="img/quiz.png">
-                    </div>
+                <section class="contacts">
+                    <h3>Как с нами связаться</h3>
+                    <ul>
+                        <li>По телефону: <br><a href="tel:79252611590">+7 (925) 261-15-90</a></li>
+                        <li>По электронной почте: <br><a href="mailto:vokhrin.o.l@yandex.ru">vokhrin.o.l@yandex.ru</a></li>
+                        <li>Через все популярные мессержеры и соцсети<br>
+                            <div class="share-container">
+                                <a href="https://t.me/"><img src="img/icons/telegram.png" alt="tg"></a>
+                                <a href="https://www.youtube.com/"><img src="img/icons/whatsapp.png" alt="whatsapp"></a>
+                                <a href="https://vk.com/"><img src="img/icons/vk.png" alt="vk"></a>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
                 
             </main>

@@ -1,0 +1,14 @@
+section:has(> .map) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(240px + 2em);
+    gap: 2em;
+}
+
+section:has(> .map) > div > ul {
+    margin-left: 1.25em;
+}
+
+.contacts > ul{
+    margin-left: 1em;
+}

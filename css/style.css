@@ -91,16 +91,12 @@ hr {
 }
 
 @media screen and (max-width: 1000px) {
-    #page-1, #page-2,
-    #page-3, #page-4 {
-        display: none;
-    }
     body {
-        grid-template-columns: 1fr 80vw;
+        grid-template-columns: 1fr 90vw 1fr;
         grid-template-areas: 
-            "header header"
-            "aside main"
-            "footer footer";
+            "header header header"
+            "aside main asd"
+            "footer footer footer";
     }
     .main {
         margin-right: 1.5em;
@@ -124,6 +120,10 @@ hr {
     section {
         padding: .5em;
         margin-bottom: .5em;
+    }
+    #page-1, #page-2,
+    #page-3, #page-4 {
+        display: none;
     }
 }
 

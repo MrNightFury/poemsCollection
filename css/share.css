@@ -1,3 +1,7 @@
+.share-container {
+    margin-top: .5em;
+}
+
 .share-container > a {
     display: inline-block;
     position: relative;
@@ -7,9 +11,6 @@
     overflow: hidden;
     background-color: lightgrey;
     transition: 1s;
-/*     background: linear-gradient(#ffffff00, #61b4ff);
-    background-repeat: no-repeat;
-    background-position: 100% 100%; */
 }
 
 .share-container > a::before {
@@ -17,7 +18,6 @@
     position: absolute;
     bottom: -40px;
     left: -2px;
-/*     background-size: 110%; */
     width: 40px;
     height: 40px;
     z-index: 10;
@@ -28,7 +28,7 @@
     background: linear-gradient(#ffffff00, #61b4ff); 
 }
 .share-container > a:nth-child(2)::before {
-    background: linear-gradient(#ffffff00, red); 
+    background: linear-gradient(#ffffff00, lime); 
 }
 .share-container > a:nth-child(3)::before {
     background: linear-gradient(#ffffff00, #004f96); 

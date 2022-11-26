@@ -1,11 +1,24 @@
 footer {
     overflow: hidden;
     background: #f5deb3ff;
+    font-size: 125%;
 }
+
+footer a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-size: 110%;
+}
+
 
 .footer-grid {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     align-items: start;
     text-align: start;
@@ -41,11 +54,11 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
     .footer-grid {
@@ -53,3 +66,12 @@ footer {
     }
 }
 
+.contact-us > address > ul {
+    list-style: none;
+}
+.contact-us > address > ul > li:nth-child(1)::before {
+    content: "\1F582";
+}
+.contact-us > address > ul > li:nth-child(2)::before {
+    content: "\260E";
+}
