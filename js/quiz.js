@@ -85,10 +85,8 @@ function setQuestion (question) {
         a.onclick = null;
         a.onclick = function () {
             if (curQuestion.correctAns == i) {
-                // alert(curQuestion.correctAns + " " + i);
                 a.style["box-shadow"] = "0 0 1em .25em inset green";
             } else {
-                // alert(curQuestion.correctAns + " " + i);
                 a.style["box-shadow"] = "0 0 1em .25em inset red";
             }
             setTimeout (() => {
@@ -99,7 +97,6 @@ function setQuestion (question) {
             setTimeout (() => {
                 a.style.transition = "2s";
             }, 4000);
-            // setTimeout (changeQuestion, 2000, a);
         }
     }
 }

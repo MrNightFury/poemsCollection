@@ -1,7 +1,5 @@
 body {
     max-width: 100%;
-    
-/*     overflow: hidden; */
 }
 
 header {
@@ -37,10 +35,6 @@ header > .title {
     margin-top: .25em;
 }
 
-/* header > .menu-button-container {
-    display: none;
-} */
-
 .submenu {
     display: none;
 }
@@ -56,9 +50,6 @@ header > .topnav {
     height: auto;
     grid-area: nav;
     pointer-events: none;
-/*     transition: 1s; */
-/*     display: none; */
-    
 }
 
 header > .topnav > li {
@@ -69,7 +60,6 @@ header > .topnav > li {
     padding: 0 .5em;
     margin-right: .2em;
     pointer-events: auto;
-/*     display: none; */
 }
 
 header > .topnav > li > a {
@@ -104,8 +94,6 @@ header > .topnav > li > a:hover::after {
 }
 
 #burger {
-/*     display: none; */
-/*     grid-area: button; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;

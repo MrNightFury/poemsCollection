@@ -8,13 +8,7 @@ section:has(> .card-holder) {
     justify-content: left;
     overflow-x: scroll;
     overflow-y: hidden;
-/*     scrollbar-width: thin; */
     gap: 4vw
-/*     flex-wrap: wrap; */
-}
-
-.card-holder::-webkit-scrollbar {
-/*     width: 0; */
 }
 
 .card {
