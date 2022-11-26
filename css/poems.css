@@ -65,7 +65,6 @@
     height: .125em;
     background: var(--back-color);;
     top: .9em;
-/*     transition: 1s; */
 }
 
 .poem-arrow::before {
@@ -79,13 +78,6 @@
 .poem > input:checked ~ label > span {
     transform: rotateX(180deg) translateY(-.6em);
 }
-
-/* .poem > input:checked ~ label > span::before {
-    transform: rotateZ(-45deg) translate(-.4em, .4em);
-}
-.poem > input:checked ~ label > span::after {
-    transform: rotateZ(45deg) translate(.4em, .4em);;
-} */
 
 .info {
     display: flex;

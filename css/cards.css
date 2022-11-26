@@ -1,14 +1,26 @@
+section:has(> .card-holder) {
+    position: relavite;
+    width: 75vw;
+}
+
 .card-holder {
     display: flex;
-    overflow: hidden;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+/*     scrollbar-width: thin; */
+    gap: 4vw
+/*     flex-wrap: wrap; */
+}
+
+.card-holder::-webkit-scrollbar {
+/*     width: 0; */
 }
 
 .card {
     position: relative;
-    width: 21vw;
-    height: 28vw;
+    width: fit-content;
+    height: fit-content;
     cursor: pointer;
 }
 
@@ -20,7 +32,7 @@
     position: absolute;
     width: 100%;
     height: 28vw;
-    bottom: 0;
+    bottom: 1%;
     transition: .75s;
 }
 
@@ -45,18 +57,29 @@
 /*     backdrop-filter: blur(10px); */
 }
 
+@media screen and (max-width: 1000px) {
+    section:has(> .card-holder) {
+        width: calc(80vw - 2em);
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .card {
-        width: 27vw;
-        height: 36vw;
+    section:has(> .card-holder) {
+        width: auto;
     }
-
+    .card-holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
     .card > img {
-        width: 27vw;
+        width: 100%;
     }
-
     .card > div {
-        height: 36vw;
+        height: 100%;
+    }
+    .card-holder::-webkit-scrollbar {
+        width: 0;
     }
 }
 
