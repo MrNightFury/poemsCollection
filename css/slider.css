@@ -88,4 +88,7 @@ section:has(.slider) {
         width: 8vw;
         height: 8vw;
     }
+    section:has(.slider) {
+        min-height: calc(60vw + 2em);
+    }
 }
