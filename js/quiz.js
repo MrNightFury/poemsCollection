@@ -93,10 +93,11 @@ function setQuestion (question) {
                 a.style.transition = "0s";
                 a.style["box-shadow"] = "none";
                 changeQuestion (a);
-            }, 2000);
-            setTimeout (() => {
-                a.style.transition = "2s";
-            }, 4000);
+                setTimeout (() => {
+                    a.style.transition = "1s";
+                }, 100);
+            }, 1000);
+            
         }
     }
 }
