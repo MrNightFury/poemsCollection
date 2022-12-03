@@ -71,7 +71,7 @@ function getQuestion (type) {
     return question;
 }
 
-function setQuestion (elem) {
+function updateQuestion () {
     curQuestion = getRandomQuestion();
     let q = document.getElementById("question");
     q.innerText = curQuestion.que;
@@ -88,7 +88,7 @@ function setQuestion (elem) {
             setTimeout (() => {
                 a.style.transition = "0s";
                 a.style["box-shadow"] = "none";
-                setQuestion (elem);
+                updateQuestion ();
                 setTimeout (() => {
                     a.style.transition = "1s";
                 }, 100);
@@ -97,5 +97,5 @@ function setQuestion (elem) {
     }
 }
 
-let curQuestion = getRandomQuestion();
-setQuestion(curQuestion);
+let curQuestion ;
+updateQuestion();
