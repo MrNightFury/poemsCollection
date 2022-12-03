@@ -1,21 +1,19 @@
-import data from './quiz.json' assert { type: 'json' };
+import data from './quiz.json' assert {type: 'json' };
 
 function random(max) {
     return Math.floor(Math.random() * max);
 }
-
 let questionTypes = ["poet-poem", "poem-poet"];
-function getQuestion () {
-    return getRandomQuestion (questionTypes[random(questionTypes.length)]);
+function getRandomQuestion () {
+    return getQuestion (questionTypes[random(questionTypes.length)]);
 }
 
-function getRandomQuestion (type) {
+function getQuestion (type) {
     let question = {
         "que": "",
         "correctAns": -1,
         "anss": ["","","",""]
     }
-    
     if (type == "poet-poem") {
         let poetIndex = random(data.length);
         let poet = data[poetIndex];
@@ -25,7 +23,6 @@ function getRandomQuestion (type) {
         question.que = "Какой из стихов принадлежит поэту " + poetName + "?";
         question.correctAns = random(4);
         question.anss[question.correctAns] = correctAns;
-        
         let availablePoets = [];
         for (let i = 0; i < data.length; i++) {
             if (i != poetIndex) {
@@ -42,7 +39,6 @@ function getRandomQuestion (type) {
                         break;
                     }
                 }
-                
             }
         }
     } else if (type == "poem-poet") {
@@ -69,19 +65,19 @@ function getRandomQuestion (type) {
                         break;
                     }
                 }
-                
             }
         }
     }
     return question;
 }
-function setQuestion (question) {
-    curQuestion = question;
+
+function setQuestion (elem) {
+    curQuestion = getRandomQuestion();
     let q = document.getElementById("question");
-    q.innerText = question.que;
+    q.innerText = curQuestion.que;
     for (let i = 0; i < 4; i++) {
         let a = document.getElementById("answer-" + i);
-        a.innerText = question.anss[i];
+        a.innerText = curQuestion.anss[i];
         a.onclick = null;
         a.onclick = function () {
             if (curQuestion.correctAns == i) {
@@ -92,21 +88,14 @@ function setQuestion (question) {
             setTimeout (() => {
                 a.style.transition = "0s";
                 a.style["box-shadow"] = "none";
-                changeQuestion (a);
+                setQuestion (elem);
                 setTimeout (() => {
                     a.style.transition = "1s";
                 }, 100);
             }, 1000);
-            
         }
     }
 }
-function changeQuestion (elem) {
-    
-    let newQuestion = getQuestion();
-    setQuestion(newQuestion);
-    
-}
 
-let curQuestion = getQuestion();
+let curQuestion = getRandomQuestion();
 setQuestion(curQuestion);

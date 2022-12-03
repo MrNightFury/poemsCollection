@@ -62,6 +62,11 @@ section:has(.slider) {
     width: 100%;
 }
 
+.slider > div > figure {
+    width: 32vw;
+    overflow: hidden;
+}
+
 .slider:hover > .slider-arrow-l,
 .slider:hover > .slider-arrow-r {
     opacity: 1;
@@ -77,6 +82,9 @@ section:has(.slider) {
         width: 80vw;
         height: 60vw;
         margin-bottom: 1em;
+    }
+    .slider > div > figure {
+        width: 80vw;
     }
     .slider > div > figure > img {
         height: 60vw;
