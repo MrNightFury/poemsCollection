@@ -1,16 +1,11 @@
-/* section:has(> .card-holder) { */
-.has-cards{
+section:has(> .card-holder) {
     position: relavite;
     width: calc(75vw - 36px);
 }
 
 .card-holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    justify-content: left;
     overflow-x: scroll;
     overflow-y: hidden;
     gap: 2.5vw
@@ -18,19 +13,13 @@
 
 .card {
     position: relative;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     cursor: pointer;
 }
 
 .card > img {
     width: 21vw;
-    -webkit-transition: .75s;
-    -o-transition: .75s;
     transition: .75s;
 }
 
@@ -48,11 +37,7 @@
     text-align: center;
     color: white;
     opacity: 0;
-    -webkit-transform: translatey(-50%);
-        -ms-transform: translatey(-50%);
-            transform: translatey(-50%);
-    -webkit-transition: .75s;
-    -o-transition: .75s;
+    transform: translatey(-50%);
     transition: .75s;
     word-wrap: break-word;
 }
@@ -62,8 +47,7 @@
 } */
 
 .card:hover > img {
-    -webkit-filter: blur(8px);
-            filter: blur(8px);
+    filter: blur(8px);
 }
 
 .card:hover > div > h2 {
@@ -97,13 +81,8 @@
 }
 
 .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 1em;
 }
 

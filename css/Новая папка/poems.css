@@ -24,8 +24,6 @@
     padding: 0;
     height: 0;
     overflow: hidden;
-    -webkit-transition: height 1s;
-    -o-transition: height 1s;
     transition: height 1s;
     margin-top: .5em;
 }
@@ -45,8 +43,6 @@
 }
 
 .poem > label {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     color: var(--back-color2);
 }
@@ -58,8 +54,6 @@
     width: 1.5em;
     height: 2em;
     margin: 0 .5em;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -74,30 +68,20 @@
 }
 
 .poem-arrow::before {
-    -webkit-transform: rotateZ(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
     left: -1em;
 }
 .poem-arrow::after {
-    -webkit-transform: rotateZ(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
     right: -1em;
 }
 .poem > input:checked ~ label > span {
-    -webkit-transform: rotateX(180deg) translateY(-.6em);
-            transform: rotateX(180deg) translateY(-.6em);
+    transform: rotateX(180deg) translateY(-.6em);
 }
 
 .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 1em;
 }
 

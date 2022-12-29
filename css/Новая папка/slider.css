@@ -1,12 +1,7 @@
 .slider {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     overflow: hidden;
     float: right;
     width: 32vw;
@@ -14,26 +9,19 @@
     margin-left: 1em;
 }
 
-/* section:has(.slider) { */
-.has-slider {
+section:has(.slider) {
     min-height: calc(24vw + 2em);
-    /* overflow: hidden; */
 }
 
 .slider > .slider-img-wrap {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     left: 0%;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
 }
 
 .slider > div > figure > img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 24vw;
 }
 
@@ -46,8 +34,6 @@
     width: 3vw;
     height: 3vw;
     opacity: 0;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
     transition: .5s;
 }
 .slider-arrow-l > img,
@@ -69,8 +55,7 @@
     left: -.2em;
     padding: .1em .5em;
     background: #d3d3d3c4;
-    -webkit-backdrop-filter: blur(8px);
-            backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     border-style: solid;
     border-color: #74493b;
     border-radius: .3em;

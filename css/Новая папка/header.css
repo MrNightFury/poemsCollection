@@ -11,11 +11,8 @@ header {
         "icon nav"
         "line line";
     background: wheat;
-    -webkit-column-gap: 1em;
-       -moz-column-gap: 1em;
-            column-gap: 1em;
-    -webkit-box-shadow: 0 -1.5em 2em 1em wheat;
-            box-shadow: 0 -1.5em 2em 1em wheat;
+    column-gap: 1em;
+    box-shadow: 0 -1.5em 2em 1em wheat;
 }
 
 header > .line {
@@ -43,19 +40,12 @@ header > .title {
 }
 
 header > .topnav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     padding: 0;
     height: auto;
     grid-area: nav;
@@ -63,8 +53,6 @@ header > .topnav {
 }
 
 header > .topnav > li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     border-style: solid;
     border-color: #74493b;
@@ -88,17 +76,13 @@ header > .topnav > li > a::after {
     width: 100%;
     bottom: 0;
     left: 0;
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-    -webkit-transition: 1s;
-    -o-transition: 1s;
+    transform: rotateY(90deg);
     transition: 1s;
 }
 
 header > .topnav > li > a:hover::after {
     opacity: 1;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
 }
 
 #menu-wrapper {
@@ -110,15 +94,9 @@ header > .topnav > li > a:hover::after {
 }
 
 #burger {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
     width: 4em;
     height: 4em;
     margin: 0;
@@ -153,15 +131,9 @@ header > .topnav > li > a:hover::after {
     }
 
     #menu-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-around;
     }
     #burger {
         grid-area: button;
@@ -177,10 +149,7 @@ header > .topnav > li > a:hover::after {
     header > .topnav {
         position: absolute;
         overflow: hidden;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        flex-direction: column;
         top: 100%;
         width: 100%;
         right: 0;
@@ -191,12 +160,9 @@ header > .topnav > li > a:hover::after {
         position: relative;
         left: 100%;
         margin: 0;
-        -webkit-transition: left 1s;
-        -o-transition: left 1s;
         transition: left 1s;
         background: #e9e9e9a8;
-        -webkit-backdrop-filter: blur(8px);
-                backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
         width: 100%;
     }
 

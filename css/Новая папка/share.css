@@ -10,8 +10,6 @@
     border-radius: 20px;
     overflow: hidden;
     background-color: lightgrey;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -23,24 +21,16 @@
     width: 40px;
     height: 40px;
     z-index: 10;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
 }
 
 .share-container > a:nth-child(1)::before {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), to(#61b4ff));
-    background: -o-linear-gradient(#ffffff00, #61b4ff);
     background: linear-gradient(#ffffff00, #61b4ff); 
 }
 .share-container > a:nth-child(2)::before {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), to(lime));
-    background: -o-linear-gradient(#ffffff00, lime);
     background: linear-gradient(#ffffff00, lime); 
 }
 .share-container > a:nth-child(3)::before {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff00), to(#004f96));
-    background: -o-linear-gradient(#ffffff00, #004f96);
     background: linear-gradient(#ffffff00, #004f96); 
 }
 
@@ -59,15 +49,11 @@
     left: 1px;
     z-index: 10;
     height: 32px;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
     transition: .5s;
     margin: 2px;
 }
 
 .share-container > a:hover > img {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-    -webkit-filter: drop-shadow(4px 4px 2px gray);
-            filter: drop-shadow(4px 4px 2px gray)
+    transform: rotateY(360deg);
+    filter: drop-shadow(4px 4px 2px gray)
 }

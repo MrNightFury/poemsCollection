@@ -7,8 +7,6 @@ footer {
 footer a {
     text-decoration: none;
     color: black;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
     transition: .5s;
 }
 
@@ -22,9 +20,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    align-items: start;
     text-align: start;
 }
 
@@ -45,8 +41,6 @@ footer a:hover {
     background: black;
     height: 2px;
     width: 20%;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
     transition: .5s;
 }
 
